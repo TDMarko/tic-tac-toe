@@ -1,0 +1,40 @@
+{
+    "compilerOptions": {
+        "target": "es2015",
+        "module": "commonjs",
+        "esModuleInterop": false,
+        "jsx": "react",
+        "jsxFactory": "h",
+        "declaration": true,
+        "importHelpers": true,
+        "sourceMap": true,
+        "strictNullChecks": true,
+        "noImplicitAny": false,
+        "noEmitOnError": true,
+        "skipLibCheck": true,
+        "outDir": "./dist",
+        "baseUrl": "./",
+        "lib": [
+            "es2015",
+            "DOM",
+            "ScriptHost"
+        ],
+        "paths": {
+            "*": [
+                "node_modules/*"
+            ],
+            "react": [
+                "node_modules/preact/compat/"
+            ],
+            "react-dom": [
+                "node_modules/preact/compat/"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

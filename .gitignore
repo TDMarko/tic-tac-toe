@@ -1,0 +1,9 @@
+/node_modules
+*.iml
+.vscode
+.idea
+/.reports
+.nfs*
+package-lock.json
+/dist
+.cache
