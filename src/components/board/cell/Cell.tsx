@@ -4,7 +4,7 @@ import { ESign } from "../Board";
 
 export interface ICell {
     cellIndex: number;
-    sign: ESign;
+    sign: ESign | null;
     winningPattern: number[] | null;
     onClick: () => void;
 }

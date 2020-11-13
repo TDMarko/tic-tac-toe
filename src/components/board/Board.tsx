@@ -12,7 +12,7 @@ export enum ESign {
 }
 
 interface IBoardState {
-    moves: any[]; // This is ugly, fix that
+    moves: ESign[] | null[];
     move: number;
     turn: ESign;
     isGameWon: boolean;
@@ -96,7 +96,6 @@ export default class Board extends Component<{}, IBoardState> {
         }
         const styleContainer = {
             width: "30em",
-            // Decided to make UI smaller at the end of development
             fontSize: "0.5em",
             position: "relative",
         }
@@ -125,7 +124,6 @@ export default class Board extends Component<{}, IBoardState> {
         };
 
         for (let i = 0; i < NUMBER_OF_CELLS; i++) {
-            // TODO: key needed here?
             cells.push(
                 <Cell
                     cellIndex={i}
